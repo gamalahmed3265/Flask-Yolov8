@@ -9,7 +9,7 @@ To create a live stream with YOLO using Flask, you will need to:
 3. In the project directory, create a file called `app.py`.
 4. In `app.py`, import the necessary packages and modules.
 5. Create a function to get the video stream from the webcam.
-6. Create a function to load the YOLOv5 model.
+6. Create a function to load the YOLOv8 model.
 7. Create a function to detect objects in the video stream.
 8. Create a route to serve the live stream.
 9. Run the Flask server.
