@@ -1,9 +1,20 @@
-To run `eni verment flask`, you will need to:
 
 1. Install the following packages:
     * Flask
     * OpenCV
     * YOLOv58
+
+in environment
+```
+pip install package_name
+```
+
+
+in conda
+```
+conda install package_name
+```
+
 
 2. Create a new Flask project.
 3. In the project directory, create a file called `app.py`.
