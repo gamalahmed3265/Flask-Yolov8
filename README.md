@@ -1,20 +1,20 @@
-To create a live stream with YOLO using Flask, you will need to:
+To run `eni verment flask`, you will need to:
 
 1. Install the following packages:
     * Flask
     * OpenCV
-    * YOLOv8
+    * YOLOv58
 
 2. Create a new Flask project.
 3. In the project directory, create a file called `app.py`.
 4. In `app.py`, import the necessary packages and modules.
 5. Create a function to get the video stream from the webcam.
-6. Create a function to load the YOLOv8 model.
+6. Create a function to load the YOLOv58 model.
 7. Create a function to detect objects in the video stream.
 8. Create a route to serve the live stream.
 9. Run the Flask server.
 
-Here is an example of a Flask application that can be used to create a live stream with YOLO:
+Here is an example of a Flask application that can be used to run `eni verment flask`:
 
 ```python
 import cv2
@@ -45,9 +45,9 @@ def get_video_stream():
         yield frame
 
 def load_yolo_model():
-    """Loads the YOLOv5 model."""
+    """Loads the YOLOv58 model."""
     # Load the model
-    model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+    model = torch.hub.load('ultralytics/YOLOv58', 'YOLOv58s', pretrained=True)
 
     # Return the model
     return model
@@ -92,6 +92,18 @@ def video_feed():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
+
+This code will create a live stream that can be viewed in a web browser. The live stream will show the video from the webcam, and objects will be detected and labeled in the video stream.
+
+To run the code, you will need to save it as a file called `app.py`. Then, you can run the Flask server by typing the following command in the terminal:
 
 ```
-This code will create a live stream that can be viewed in a web browser. The live stream will show the video from the webcam, and objects will be detected and labeled in the video stream.
+flask run
+```
+
+The Flask server will start running on port 5000. You can then view the live stream by opening a web browser and navigating to the following URL:
+
+```
+http://localhost:5000/video_feed
+```
