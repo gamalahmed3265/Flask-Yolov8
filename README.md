@@ -3,7 +3,7 @@ To create a live stream with YOLO using Flask, you will need to:
 1. Install the following packages:
     * Flask
     * OpenCV
-    * YOLOv5
+    * YOLOv8
 
 2. Create a new Flask project.
 3. In the project directory, create a file called `app.py`.
