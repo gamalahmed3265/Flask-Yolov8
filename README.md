@@ -25,7 +25,7 @@ conda install package_name
 8. Create a route to serve the live stream.
 9. Run the Flask server.
 
-Here is an example of a Flask application that can be used to run `eni verment flask`:
+Here is an example of a Flask application that can be used to run `environment flask`:
 
 ```python
 import cv2
